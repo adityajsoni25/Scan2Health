@@ -1,0 +1,191 @@
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-image: url('../css/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #333;
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1, h2, h3 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+input[type="number"],
+select,
+#barcode-input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fefefe;
+}
+
+button, input[type="submit"] {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, input[type="submit"]:hover {
+  background-color: #125ea2;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  input, button {
+    font-size: 14px;
+  }
+}
+.checkbox-wrapper-orange *,
+  .checkbox-wrapper-orange ::after,
+  .checkbox-wrapper-orange ::before {
+    box-sizing: border-box;
+  }
+
+  .checkbox-wrapper-orange [type=checkbox].substituted {
+    margin: 0;
+    width: 0;
+    height: 0;
+    display: inline;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+
+  .checkbox-wrapper-orange [type=checkbox].substituted + label:before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    height: 1.15em;
+    width: 1.15em;
+    margin-right: 0.6em;
+    border: solid 0.06em;
+    border-radius: 0.2em;
+    background: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 9 9"><rect x="0" y="4.3" transform="matrix(-0.707 -0.7072 0.7072 -0.707 0.5891 10.4702)" width="4.3" height="1.6"/><rect x="2.2" y="2.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 12.1877 2.9833)" width="6.1" height="1.7"/></svg>') no-repeat center, white;
+    background-size: 0;
+    transition: background 0.15s, background-size 0.15s, border 0.15s;
+  }
+
+  .checkbox-wrapper-orange [type=checkbox].substituted:checked + label:before {
+    background-color: orange;
+    background-size: 0.75em;
+    border-color: orange;
+  }
+
+  .checkbox-wrapper-orange [type=checkbox].substituted:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.3);
+  }
+
+  .checkbox-wrapper-orange [type=checkbox].substituted:disabled + label:before {
+    opacity: 0.5;
+  }
+
+  .checkbox-wrapper-orange [type=checkbox].substituted + label {
+    cursor: pointer;
+    user-select: none;
+  }
+.back-to-search {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    z-index: 999;
+}
+
+.back-to-search:hover {
+    background-color: #0c57c4;
+    transform: scale(1.05);
+}
+
+
+</style>
